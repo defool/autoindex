@@ -17,16 +17,17 @@ A directory listing tool.
 
 **Step 1:** Install the required packages
 
-	sudo apt-get install python-dev python-pip
-	sudo pip install
+	sudo apt-get install python-dev python-pip git
+	sudo pip install uwsgi
 	git clone http://github.com/defool/autoindex.git
 	cd autoindex
+	pwd
 
 **Step 2:**
 
 Set **chdir** in autoindex/uwsgi.ini to the your full path name of **autoindex** directory
 
-**Step 3:**Run uwsgi
+**Step 3:** Run uwsgi
 	
 	uwsgi uwsgi.ini # or nohup uwsgi uwsgi.ini &
 
